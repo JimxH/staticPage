@@ -1,0 +1,18 @@
+
+CREATE TABLE test(
+	aid INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(5),
+	gender VARCHAR(1),
+	phone VARCHAR(11),
+	car VARCHAR(10),
+	time LONG
+);
+INSERT INTO test VALUES(
+	NULL,
+	'TOM',
+	'男',
+	18814378099,
+	'a7',
+	201606292013
+);
+select * from test;

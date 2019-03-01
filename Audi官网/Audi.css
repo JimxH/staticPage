@@ -1,0 +1,670 @@
+@charset "utf-8";
+/*通用*/
+body {
+	font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+	color:#000;
+    margin:0px;
+    padding:0px;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+input {border:none;}
+.lf   {float:left;}
+.rt  {float:right;}
+.clear  {clear:both;}
+
+a{
+    color:#111;
+    text-decoration:none;
+}
+a:hover {
+    color:#ff0700;
+}
+
+/*整体布局*/
+#top,#Running{
+    width:1211px;
+    margin:0px auto;
+}
+#main{
+	width:1080px;
+	height:800px;
+    margin:0px auto;
+	
+}
+
+
+
+/****页面顶部******/
+#top_box{
+	height:120px;
+	background:url(img/bg-head-gradient.png)left center no-repeat;
+	position:relative;
+}
+#top_box img,.top_ul{
+	position:absolute;
+	z-index:95;	
+}
+#top_box .top_FAW{
+	width:8%;
+	top:20px;
+	left:40px;
+}
+#top_box .top_BT{
+	width:15%;
+	top:50px;
+	right:130px;
+}
+#top_box .top_AUDI{
+	width:10%;
+	top:45px;
+	right:5px;
+}
+#top_box .top_ul li{
+	width:95px;
+	font-size:13px;
+	line-height:30px;
+	display:inline-block;
+	text-align:center;
+	float:left;
+	overflow:hidden;
+}
+#top_box .top_ul{
+	top:80px;
+	left:38px;
+}
+#top_box .top_ul span{
+	padding:5px 12px;
+	background:url(img/st/down2.png)5px center no-repeat;
+}
+#top_box .top_ul .search-span:hover span{
+	background:url(img/st/down3.png)5px center no-repeat;
+}
+#top_box .top_ul span+a{
+	color:#000;
+	font-weight:bold;
+	font-size:13px;
+}
+/*3d*/
+#top_box .top_ul div{
+	height:30px;
+	transform-style: preserve-3d;
+    transition: transform 0.3s linear;
+
+}
+#top_box .top_ul div a {
+	display:inline-block;
+	width:96px;
+	color:#000;
+}
+#top_box .top_ul div :last-child{
+	background:#000;
+	color:#fff;
+	transform:rotateX(-90deg) translateZ(-15px);
+}
+#top_box .top_ul div :first-child{
+	transform-style:preserve-3d;
+	transform:translateZ(15px);
+}
+#top_box .top_ul li:hover div , .top-hover{
+	transform:rotateX(90deg);
+}
+/******搜索下拉**********/
+#top-slide{
+	width:1211px;
+	height:190px;
+	background:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:90;
+	display:none;
+}
+#top-slide span{
+	padding:12px;
+	border-radius:50%	;
+	position:absolute;
+	right:30px;
+	bottom:20px;
+	background:url(img/st/down4.png) -8px -8px no-repeat ;
+	cursor:pointer;
+}
+#top-slide span:hover{
+	background:url(img/st/down6.png) -8px -8px no-repeat ;
+}
+#slide-div{
+	width:439px;
+	height:35px;
+	background:#000;
+	margin-top:135px;
+	margin-left:55px;
+	border-radius:20px;
+}
+#slide-div input{
+	width:380px;
+	height:25px;
+	float:left;
+	margin:4px;
+	border-radius:20px;
+	padding-left:8px;
+	outline:none;
+}
+#slide-div b{
+	float:right;
+	padding:5px;
+	color:#fff;
+	margin-right:3px;
+	margin-top:2px;
+	font-size:15px;
+	cursor:pointer;
+	
+}
+
+/*********预约试驾**************/
+#test{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	background:rgba(0,0,0,0.8);
+	display:none;
+}
+#test-form{
+	width:400px;
+	height:320px;
+	background:#fff;
+	margin:180px auto;
+	opacity:0.9;
+	border-radius:10px;
+	text-align:center;
+}
+#test-form>form>input{
+	width:220px;
+	line-height:25px;
+	border:1px solid #ddd;
+	border-radius:5px;
+	margin:6px;
+}
+#test-form p input{
+	margin-left:15px;
+}
+#test-form h3{
+	color:#666;
+}
+#test-form #test-btn{
+	color:#fff;
+	background:#e4393c;
+
+}
+/*******图片滚动******/
+#Running{
+	height:400px;
+	width:1211px;
+	position:relative;
+	overflow:hidden;
+}
+#runNum{
+	position:absolute;
+	left:46%;
+	bottom:28px;
+	z-index:100;
+}
+#runNum li{
+	width:12px;
+	margin:3px;
+	padding:3px 5px;
+	text-align:center;
+	border:1px solid #fff;
+	background:#ddd;
+	cursor:pointer;
+	display:inline-block;
+	border-radius:50%;
+	
+}
+#runNum li:hover,#runNum .runnum{
+	background:#000;
+	color:#fff;
+}
+#runImg{
+	position:absolute;
+	top: 0;  left: 0;
+	height:400px;
+}
+#runImg li{
+	float:left;
+	z-index:0;
+}
+/****页面主体*****/
+#select{
+	margin:30px 0;
+	padding-left:50px;
+}
+#select:after{	
+	content:"";
+	display:table;
+	clear:both;
+}
+#sel_ul{
+	float:left;
+	width:280px;
+	margin-right:25px;
+	position:relative;
+}
+
+#sel_ul>button{
+	float:right;
+	background:#000;
+	color:#fff;
+	border:none;
+	width:100px;
+	line-height:30px;
+	margin-top:12px;
+	cursor:pointer;
+}
+#sel_ul>button:hover{
+	background:#333;
+}
+#sel_ul>button>span{
+	padding-left:8px;
+}
+#sel_ul>b{
+	font-size:15px;
+}
+#sel_ul>ul{
+	margin-top:5px;
+}
+#sel_ul>ul>li{
+	border:1px solid #ccc;
+	line-height:40px;
+	padding-left:10px;
+	margin-top:12px;
+	cursor:pointer;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+#sel_ul>ul>li>u{
+	float:right;
+	padding:10px 12px ;
+	background:url(img/aodi.png)-395px -2px no-repeat;
+	margin-top:8px;
+}
+
+#sel_img{
+	float:left;
+	width:350px;
+	height:200px;
+}
+#sel_img>img{
+	width:400px;
+}
+/*定制奥迪 下拉框*/
+#sel_div{
+	position:absolute;
+	top:73px;
+	left:0;
+	width:278px;
+	height:230px;
+	border:1px solid #ddd;
+	background:#fff;
+	display:none;
+	overflow-x:hidden;
+	z-index:100;
+}
+#sel_div ul li{
+	width:100%;
+	line-height:43px;
+	border-top:1px solid #ddd;
+}
+#sel_div .tl{
+	background:#ddd;
+	padding-left:15px;
+	font-weight:bold;
+	font-size:13px;
+}
+#sel_div .ts{
+	padding-left:20px;
+	cursor:pointer;
+}
+#sel_div .ts:hover{
+	background:#eee;
+}
+.tts{
+	color:red;
+}
+/**********主题功能区**********/
+#mainFn{
+	width:100%;
+}
+#mainFn:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+#mainFn a{
+	display:block;	
+	width:332px;
+	float:left;
+}
+#mainA1{
+	height:556px;
+	background:url(img/homepage-testdrive2.jpg)top left no-repeat ;
+}
+
+#mainA2{
+	height:260px;
+	background:url(img/001.jpg)top left no-repeat ;
+}
+#mainA3{
+	height:260px;
+	background:url(img/homepage-financial-project-360-260.jpg)top left no-repeat ;
+}
+#mainA4{
+	height:260px;
+	background:url(img/controller.png_1.jpg)top left no-repeat ;
+}
+#mainA5{
+	height:260px;
+	background:url(img/002.jpg)top left no-repeat ;
+}
+#mainA1~a{
+	margin:0 0px 35px 25px; 
+}
+#mainFn div{
+	width:100%;
+	height:100%;
+	padding:20px;
+}
+#mainFn div:hover{
+	background-color:#fff;
+	background-color:rgba(255,255,255,0.2);
+}
+#mainFn h3{	
+	color:white;
+}
+#mainFn div:hover h3{
+	color:#e4393c;
+}
+/*
+#mainFn b{
+	padding:10px;
+	border:1px solid red;
+	background:url(img/st/down5.png) center right no-repeat;
+}
+*/
+#mainFn img{
+	width:5%;
+	margin-left:10px;
+}
+
+#mainFn a{
+	transform:scale(1);
+	transition:transform 0.3s linear;
+	border-radius:5px;
+}
+#mainFn a:hover {
+	transform:scale(0.98);
+}
+
+
+/****导航部分***/
+#nav{
+	width:100%;
+	height:380px;
+	background:#e7e9ea;
+	margin-top:50px;
+	padding-top:20px;
+}
+#navT{
+	width:1100px;
+	margin:0 auto;
+}
+#navT:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+#navT ul li{
+	float:left;
+	width:150px;
+	line-height:30px;
+}
+#navT>ul>:first-child {
+	margin-left:50px;
+}
+#navT span{
+	padding:8px;
+	background:url(img/aodi.png) -427px 4px  no-repeat;
+}
+#navT ul li b{
+	padding-left:3px;
+}
+#navT>ul>li li{
+	width:100px;
+	transition:transform 0.3s linear;
+}
+#navT>ul>li li:hover {
+	transform:translateX(15px);
+}
+#navT>ul>li li:hover a{
+	color:red;
+}
+
+
+#navB{
+	width:80%;
+	height:120px;
+	margin:0 auto;
+	border-top:1px solid #ddd;
+	margin-top:30px;
+}
+#navB *{
+	float:left;
+}
+#navB>div{
+	margin:18px;
+	margin-left:40px;
+	line-height:150px;
+	text-align:center;
+	
+}
+#navB>div:hover{
+	transform:rotateY(360deg);
+	transition:all 0.3s linear;
+}
+#navB a {
+	display:inline-block;
+	width:90px;
+	height:100px;
+}
+#navB b {
+	margin-top:50px;
+	padding:20px 0;
+	border:1px solid #ddd;
+}
+#navB div:nth-child(1){
+	background:url(img/aodi.png) no-repeat 7px -75px;
+}
+#navB div:nth-child(3){
+	background:url(img/aodi.png) no-repeat -142px -78px;
+}
+#navB div:nth-child(5){
+	background:url(img/aodi.png) no-repeat -289px -79px;
+}
+#navB div:nth-child(7){
+	background:url(img/aodi.png) no-repeat -437px -77px;
+}
+
+#navB div:nth-child(9){
+	background:url(img/aodi.png) no-repeat -584px -76px;
+}
+#navB div:nth-child(11){
+	background:url(img/aodi.png) no-repeat -733px -76px;
+}
+#navB div:nth-child(13){
+	background:url(img/aodi.png) no-repeat -880px -76px;
+}
+
+/******页脚部分********/
+#footer{
+	width:100%;
+	height:130px;
+	background:#434c53;
+}
+#footer-div{
+	margin:0 auto;
+	width:1080px;
+	height:100px;
+}
+#footer-div a{
+	color:#fff;
+	display:inline-block;
+	margin:30px 0 35px 60px;
+}
+#footer-div a:hover{
+	color:#ddd;
+}
+
+#footer-div hr{	
+	color:#363d42;
+	margin-bottom:15px;
+}
+#footer b{
+	margin-left:60px;
+	color:#b0b6b8;
+}
+#footer span{
+	padding:10px 18px;
+	margin:10px;
+	border-radius:50%;
+	cursor:pointer;
+}
+#footer .fot-span1{
+	margin-left:78px;
+	background:url(img/aodi.png) no-repeat -471px -3px;
+}
+#footer .fot-span2{
+	background:url(img/aodi.png) no-repeat -510px -3px;
+}
+
+
+
+/**********图片阅历**************/
+#showD{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	background:rgba(0,0,0,0.9);
+	display:none;
+}
+
+#showS{
+	width:1300px;
+	height:600px;
+	margin:50px auto;
+	position:relative;
+	overflow:hidden;
+	margin-left:20px;
+	margin-right:20px;
+}
+		
+#showP{
+	width:1300px;
+	height:600px;
+	position:relative;
+}
+#showP li{
+	list-style:none;
+	width:0;
+	height:0;
+	position:absolute;
+	top:135px;
+	left:485px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#showP li span{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:alpha(opacity=50);
+	background:rgba(0,0,0,.5);
+	display:block;
+}
+#showP li img{
+	width:100%;
+	height:100%;
+}
+#showP li.l1{ 
+	width:995px; 
+	height:570px;	
+	left:165px; 
+	top:0px; 
+	z-index:10;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+#showP li.l2{ 
+	width:530px;
+	height:432px; 
+	left:830px; 
+	top:60px; 
+	z-index:9;
+	opacity:1;
+	filter:alpha(opacity=100);}
+#showP li.l0{ 
+	width:530px;
+	height:432px;
+	left:-150px;
+	top:60px;
+	z-index:9;
+	opacity:1;
+	filter:alpha(opacity=100);}			
+
+#showP li.l3{ 
+	width:300px;
+	height:150px;
+	left:970px;
+	top:60px; 
+	z-index:8;}				
+#showP li.l9{ width:300px; 
+	height:150px;
+	left:-300px;
+	top:60px;
+	z-index:8;}
+/*按钮 开始*/
+#btn div{
+	width:45px;
+	height:45px;
+	position:absolute;
+	top:50%;
+	margin-top:-22px;
+	z-index:999;
+	cursor:pointer;
+}
+#left{
+	background:url(img/st/going/left.png);
+	left:0;
+}
+#right{
+	background:url(img/st/going/right.png);
+	right:0;
+}		
+#btn #close{
+	color:#fff;
+	opacity:0.8;
+	font-size:35px;
+	font-weight:bold;
+	top:2%;
+	right:0;
+}		
+	

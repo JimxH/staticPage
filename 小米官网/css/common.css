@@ -1,0 +1,49 @@
+body,ul,ol,li,p,img,input,textarea,select,h1,h2,h3,h4,h5,h6,dl,dt,dd,details,summary,i,b{
+	padding:0;
+	margin:0;
+}
+body{
+	font-size:12px;
+	font-family:"Microsoft Yahei";
+	color:#333;
+}
+img {
+	vertical-align:bottom;
+	border:none;
+}
+div:before {
+	content:"";
+	display:table;
+}
+div:after,ul after {
+	content:"";
+	display: table;
+	clear: both;
+}
+ul {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	color:#666;
+}
+a:hover {
+	color:#333;
+	text-decoration: underline;
+}
+input,button {
+	outline:none;
+	border:1px #e5e5e5 solid;
+}
+.clear {
+	clear:both;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.hidden {
+	display:none;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 一汽-大众奥迪 </title>
+  <meta charset="utf-8"/>
+  <meta name="Author" content="">
+  <meta name="Keywords" content="Audi">
+  <link rel="icon" href="img/iron.png">
+   <link rel="stylesheet" href="Audi.css">	             
+ </head>
+  <body>
+<!--预约试驾  -->
+	<div id="test">
+		<div id="test-form">
+		<form action="audi-user.php" >
+			<br>
+			<h2>提交信息</h2>
+			<br>
+			<h3>请输入姓名:</h3>
+
+			<input type="text" placeholder="用户姓名" maxlength="8" id="test-name" >
+			
+			<p>
+			<input type="radio" name="gender" value="男" checked>先生
+			<input type="radio" name="gender" value="女">女士
+			</p>
+
+			<h3>预留联系方式:</h3>	
+			<input type="text" placeholder="手机号码" pattern="^1[358]\d{9}$"  id="testphone" >
+			<h3>试驾车型:</h3>	
+			<input type="text" placeholder=" A8L" maxlength="8" id="test-msg" >
+			<br>
+			<input type="button" value="提交" id="test-btn">
+			
+		</form>
+		</div>
+	</div>
+<!--车型展示  -->
+	<div id="showD">
+		<div id="showS" >
+			<div id='showP'>
+				<li class='l1'><img src="img/st/going/1.jpg" alt="" /></li>
+				<li class='l2'><img src="img/st/going/2.jpg" alt="" /></li>
+				<li class='l3'><img src="img/st/going/3.jpg" alt="" /></li>
+				<li><img src="img/st/going/4.jpg" alt="" /></li>
+				<li><img src="img/st/going/5.jpg" alt="" /></li>
+				<li><img src="img/st/going/6.jpg" alt="" /></li>
+				<li><img src="img/st/going/7.jpg" alt="" /></li>
+				<li><img src="img/st/going/8.jpg" alt="" /></li>
+				<li class='l9'><img src="img/st/going/9.jpg" alt="" /></li>
+				<li class='l0'><img src="img/st/going/10.jpg" alt="" /></li>
+			</div>
+			<div id="btn">
+				<div id="left"></div>
+				<div id="right"></div>
+				<div id="close">x</div>
+			</div>
+	
+		</div>
+
+
+	</div>
+<!--页面顶部-->
+	<header id="top">
+		<div id="top_box">
+			<img src="img/faw_logo_172_48.png" class="top_FAW">
+			<img src="img/logo-cn-321-62.png" class="top_BT">
+			<img src="img/logo_rings.jpg" class="top_AUDI">
+			<ul class="top_ul">
+				<li id="showcar">
+					<div >
+						<a href="#">奥迪车型</a>
+						<a href="#">奥迪车型</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">品荐二手车</a>
+						<a href="#">品荐二手车</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">奥迪服务</a>
+						<a href="#">奥迪服务</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">创新科技</a>
+						<a href="#">创新科技</a>
+					</div>
+				</li>
+				<li id="test-drive">
+					<div >
+						<a href="#">预约试驾</a>
+						<a href="#">预约试驾</a>
+					</div>
+				</li>
+				<li class="search-span"><span></span><a href="#">搜索</a></li>
+			</ul>
+<!-- 搜索下拉 -->
+			<div id="top-slide">
+				<div id="slide-div">
+					<input type="text" placeholder="输入搜索内容">
+					<b>搜索</b>
+				</div>
+				<span></span>
+			</div>
+		</div>
+		<div id="Running">
+			<ul id="runNum">
+<!-- 				<li>1</li> -->
+<!-- 				<li>2</li> -->
+<!-- 				<li>3</li> -->
+<!-- 				<li>4</li> -->
+			</ul>
+			<ul id="runImg">
+				
+			</ul>	
+		</div>
+	</header>
+ <!--页面主体-->
+	<section id="main">
+		<div id="select">
+			<div id="sel_ul">
+				<b>定制你的奥迪</b>
+				<ul>
+					<li id="your_audi"><span>A8L-W12</span><u></u>
+					</li>
+					<li>花剑银，金属漆<u></u></li>
+				</ul>
+				<button>开始配置<span>></span></button>
+				<div id="sel_div">
+					<ul>
+						<li class="tl">A8</li>
+						<li class="ts tts">A8L-W12</li>
+						<li class="ts">S8</li>
+						<li class="ts">A8L</li>
+
+						<li class="tl">R8</li>
+						<li class="ts">R8-Coupe</li>
+						<li class="ts">R8 Spyder</li>
+
+						<li class="tl">A4</li>
+						<li class="ts">RS-4</li>
+						<li class="ts">A4 allroad quattro</li>
+
+						<li class="tl">A5</li>
+						<li class="ts">RS-5</li>
+						<li class="ts">A5 Sporback</li>
+
+						<li class="tl">A7</li>
+						<li class="ts">RS-7</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+			<div id="sel_img">
+				<img src="img/A8L-W12.png" id="inner_img">
+			</div>
+		</div>
+		<div id="mainFn">
+				<a href="#" id="mainA1">
+						<div><h3>奥迪全系车型预约试驾<img src="img/st/down5.png" ></h3></div>
+				</a>
+				<a href="#" id="mainA2">
+						<div><h3>英雄所驾 伟大不止<b></b></h3></div>
+				</a>
+			
+				<a href="#" id="mainA3">
+						<div><h3>限时金融购车方案<b></b></h3>
+						</div>
+				</a>
+			
+				<a href="#" id="mainA4">
+						<div><h3>新车在线展厅<b></b></h3></div>
+				</a>
+				<a href="#" id="mainA5">
+						<div><h3>全系奥迪Q7 加入英雄阵容<b></b></h3></div>
+				</a>
+		</div>
+	</section>
+<!--导航部分 -->
+	<nav id="nav">
+		<div id="navT">
+			<ul>
+				<li>
+					<b>奥迪车型</b>
+					<ul>
+						<li><span></span><a href="#">查看全部车型</a></li>
+						<li><span></span><a href="#">新车揭秘</a></li>
+						<li><span></span><a href="#">RS高性能系列</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>奥迪品荐二手车</b>
+					<ul>
+						<li><span></span><a href="#">关于奥迪品荐</a></li>
+						<li><span></span><a href="#">二手车在线展厅</a></li>
+						</a><li><span></span><a href="#">品荐服务</li>
+						</a><li><span></span><a href="#">置换服务</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>奥迪服务</b>
+					<ul>
+						<li><span></span><a href="#">金融服务</a></li>
+						<li><span></span><a href="#">大用户&VIP</a></li>
+						<li><span></span><a href="#">售后服务</a></li>
+						<li><span></span><a href="#">奥迪精品</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>创新科技</b>
+					<ul>
+						<li><span></span><a href="#">科技亮点</a></li>
+						<li><span></span><a href="#">探秘奥迪科技</a></li>
+						<li><span></span><a href="#">前沿科技</a></li>
+						<li><span></span><a href="#">概念车</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>奥迪品牌</b>
+					<ul>
+						<li><span></span><a href="#">奥迪运动</a></li>
+						<li><span></span><a href="#">新闻与活动</a></li>
+						<li><span></span><a href="#">品牌基因</a></li>
+						<li><span></span><a href="#">奥迪杂志</a></li>
+						<li><span></span><a href="#">奥迪俱乐部</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>联系奥迪</b>
+					<ul>
+						<li><span></span><a href="#">个人主页</a></li>
+						<li><span></span><a href="#">预约驾驶</a></li>
+						<li><span></span><a href="#">联系经销商</a></li>
+						<li><span></span><a href="#">车型手册</a></li>
+						<li><span></span><a href="#">《奥迪杂志》</a></li>
+						<li><span></span><a href="#">咨询/建议</a></li>
+					</ul>
+				</li>
+				<li>
+					<b>相关网站链接</b>
+					<ul>
+						<li><span></span><a href="#">奥迪全球</a></li>
+						<li><span></span><a href="#">一汽-大众</a></li>
+						<li><span></span><a href="#">奥迪运动</a></li>
+					</ul>
+				</li>	
+			</ul>
+			
+		</div>
+		<div id="navB">
+			<div>
+				<a href="#">车辆导购</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">索取报价</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">查询经销商</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">预约试驾</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">金融贷款计算器</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">索取车型手册</a>
+			</div>
+			<b></b>
+			<div>
+				<a href="#">查询新车库存</a>
+			</div>
+			
+
+		</div>
+	</nav>
+<!--页面底部-->
+	<footer id="footer">
+		<div id="footer-div">
+			<a href="#">订阅奥迪新闻传递</a>
+			<a href="#">隐私权/版权</a>
+			<a href="#">奥迪全球</a>
+			<a href="#">一汽-大众</a>
+			<a href="#">English Version</a>
+			<a href="#">吉ICP备09000793号</a>
+			<span class="fot-span1"></span>
+			<span class="fot-span2"></span>
+			<hr color='#363d42' >
+			<b>&copy;2016一汽-大众有限公司   版权所有</b>
+		</div>
+
+	</footer>
+	
+	
+	<script src="audi_index.js"></script>
+	<script src="jquery-1.12.4.js"></script>
+	<script src="audi.js"></script>
+ </body>
+</html>
